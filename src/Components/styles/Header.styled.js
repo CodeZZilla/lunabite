@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
+  position: absolute;
   width: 100%;
   background-color: white;
   height: 60px;
+  z-index: 9999;
   -webkit-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
   box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);

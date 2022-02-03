@@ -1,5 +1,5 @@
 import React from 'react';
-import {ContainerStyled, LiStyled, UlStyled} from "../styles/Header.styled";
+import {ContainerStyled, LiStyled, UlStyled} from "../../styles/Header.styled";
 
 
 export default function NavBar() {

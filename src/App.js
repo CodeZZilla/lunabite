@@ -3,9 +3,10 @@ import {observer} from "mobx-react-lite";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import {useRoutes} from "./routes";
 import CommonStore from "./Store/CommonStore";
-import Header from "./Components/Header/Header";
-import Home from "./Components/Home/Home";
-
+import Header from "./Components/LandingPage/Header/Header";
+import Home from "./Components/LandingPage/Home/Home";
+import Slider from 'react-styled-carousel';
+import SliderStyled from "./Components/LandingPage/Slider/SliderStyled";
 
 const App = observer(() => {
     return (
@@ -16,6 +17,8 @@ const App = observer(() => {
                     <Route path='/'>
                         <Header/>
                         <Home/>
+                        <SliderStyled/>
+
                     </Route>
                 </div>
             }

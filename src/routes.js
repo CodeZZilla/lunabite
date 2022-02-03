@@ -1,5 +1,5 @@
 import { Switch, Route } from "react-router-dom";
-import Header from "./Components/Header/Header";
+import Header from "./Components/LandingPage/Header/Header";
 
 export const useRoutes = (userType) => {
     return (

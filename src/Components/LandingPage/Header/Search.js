@@ -1,5 +1,5 @@
 import React from 'react';
-import {ContainerStyled, SearchStyled} from "../styles/Header.styled";
+import {ContainerStyled, SearchStyled} from "../../styles/Header.styled";
 
 
 export default function Search() {
