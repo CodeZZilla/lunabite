@@ -81,7 +81,6 @@ export const ImgTop = styled.img`
   width: 384px;
   height: 30%;
   margin-top: 7%;
-  position: absolute;
   left: 796px;
   top: 50px;
   background: #FFFFFF;

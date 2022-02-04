@@ -1,16 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
-  position: absolute;
-  width: 100%;
-  background-color: white;
-  height: 60px;
-  z-index: 9999;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
-  box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
   display: flex;
-  justify-content: space-between;
 `
 
 export const LogoStyled = styled.svg`
@@ -19,11 +10,7 @@ export const LogoStyled = styled.svg`
 `
 
 export const NavStyled = styled.nav`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+
 `
 
 export const ContainerStyled = styled.div`
@@ -39,7 +26,7 @@ export const ContainerStyled = styled.div`
 `
 
 export const SearchStyled = styled.input`
-  width: 500px;
+  width: 100%;
   padding: 12px 24px;
   font-size: 15px;
   color: #575756;

@@ -17,7 +17,6 @@ export default function Header(){
                 <Search/>
                 <NavBar/>
                 <ContainerStyled>
-                    <span>Hi,Valentyn</span>
                     <ButtonStyled><svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.728 8.62207C11.8303 7.79187 12.5444 6.47278 12.5444 4.98981C12.5444 2.48401 10.5057 0.445312
                         7.9997 0.445312C5.4939 0.445312 3.4552 2.48401 3.4552 4.98981C3.4552 6.47278 4.16913 7.79187 5.27143
