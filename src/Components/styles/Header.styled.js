@@ -1,32 +1,40 @@
 import styled from "styled-components";
 
-export const HeaderStyled = styled.header`
-  display: flex;
-`
-
-export const LogoStyled = styled.svg`
-  width: 80px;
-  height: 80px;
-`
-
 export const NavStyled = styled.nav`
-
-`
-
-export const ContainerStyled = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
-  margin-right: 20px;
-  
-  button{
-    margin-left: 10px;
-  }
+  width: 100%;
+  height: 10vh;
+  overflow-y: hidden;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
+`
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 10vh;
+`
+
+export const ContainerLogo = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 10vh;
+  width: 15vw;
 `
 
 export const SearchStyled = styled.input`
-  width: 100%;
+  width: 40vw;
   padding: 12px 24px;
   font-size: 15px;
   color: #575756;
@@ -34,7 +42,7 @@ export const SearchStyled = styled.input`
   background-repeat: no-repeat;
   background-size: 18px 18px;
   background-position: 95% 50%;
-  border-radius: 10px;
+  border-radius: 25px;
   border: 1px solid #e7e7e7;
   outline: none;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' 
@@ -56,35 +64,42 @@ export const UlStyled = styled.ul`
   align-items: center;
   margin: 0 auto;
   list-style: none;
+  height: 10vh;
 `
 
 export const LiStyled = styled.li`
   width: 100px;
-  height: 25px;
+  height: 10vh;
   transition: background-position-x 0.9s linear;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   a {
-    font-size: 15px;
+    font-size: 16px;
     color: #6F6F6F;
     text-decoration: none;
     transition: all 0.45s;
   }
-
   
+  a:hover{
+    color: black;
+  }
 `
 
 export const ButtonStyled = styled.button`
   background: radial-gradient(circle at 100%, #80B1FF, #81C7EE 10%, #83FFC1 100%, #333 10%);
   border-style: none;
   border-radius: 100px;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
   
   &:hover{
     -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
-    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 2px 2px 2px rgba(34, 60, 80, 0.2);
   }
 `

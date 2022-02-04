@@ -1,12 +1,12 @@
 import React from 'react';
-import {ContainerStyled, SearchStyled} from "../../styles/Header.styled";
+import {Container, ContainerStyled, SearchStyled} from "../../styles/Header.styled";
 
 
 export default function Search() {
     return (
-        <ContainerStyled>
+        <Container>
             <SearchStyled type="text" placeholder="Search NFTs, users, or collections"/>
-        </ContainerStyled>
+        </Container>
 
     )
 }

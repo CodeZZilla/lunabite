@@ -1,26 +1,25 @@
 import styled from "styled-components";
 
 export const Banner = styled.div`
-  width: 100%;
-  height: 550px;
+  width: 100vw;
+  height: 80vh;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background: linear-gradient(180deg, #FFA4D4 0%, rgba(255, 164, 212, 0.625) 63.02%, rgba(255, 164, 212, 0) 100%);
+  background: linear-gradient(180deg, #FFA4D4 0%, rgba(255, 164, 212, 0.625) 63.02%,
+  rgba(255, 164, 212, 0) 100%);
 `
 
 export const DivRight = styled.div`
-  width: 50%;
+  width: 50vw;
+  margin: 10% 0 0 10%;
   display: flex;
-  margin-left: 10%;
-  margin-top: 10%;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
   
-
   h1 {
     font-style: normal;
     font-weight: bold;
@@ -31,15 +30,10 @@ export const DivRight = styled.div`
     left: 147px;
     top: 131px;
     color: #FFFFFF;
-    width: 581px;
-    height: 90px;
     text-align: start;
     margin-bottom: 3%;
   }
-
   h2 {
-    width: 534px;
-    height: 70px;
     margin-top: 0;
     font-style: normal;
     font-weight: normal;
@@ -73,19 +67,15 @@ export const DivFlex = styled.div`
 `
 
 export const DivLeft = styled(DivRight)`
-  width: 50%;
-  margin-top: 10%;
+
 `
 
 export const ImgTop = styled.img`
-  width: 384px;
-  height: 30%;
-  margin-top: 7%;
-  left: 796px;
-  top: 50px;
-  background: #FFFFFF;
-  border-radius: 10px;
-
+  width: 75%;
+  height: 15vw;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
   -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.22);
   box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.22);
@@ -97,15 +87,24 @@ export const ImgTop = styled.img`
     transition-property: box-shadow, -moz-box-shadow, -webkit-box-shadow;
     transition-duration: 1s, 1s;
   }
+ /*display: none;
+  margin-top: 7%;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 10px;
+  */
 `
 
 export const ImgSecond = styled.img`
-  width: 384px;
-  height: 50%;
-  left: 1013px;
-  top: 88px;
+  width: 75%;
+  height: 15vw;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  /*
   border-radius: 10px;
-
+  display: none;
+  */
   -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.22);
   box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.22);
@@ -117,6 +116,7 @@ export const ImgSecond = styled.img`
     transition-property: box-shadow, -moz-box-shadow, -webkit-box-shadow;
     transition-duration: 1s, 1s;
   }
+  
 `
 
 export const ButtonTwoStyled = styled.button`
