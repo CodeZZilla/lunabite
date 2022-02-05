@@ -36,12 +36,11 @@ export default function Creators() {
                 </CreatorButton>
 
                 <CreatorPartner>
-                    <OwlCarousel className='owl-theme' dots={false} nav={false} animateIn={true}
-                                 autoplaySpeed={false} autoplay items={4} loop >
+                    <OwlCarousel className='owl-theme' dots={false} nav={false} animateIn
+                                  autoplay fluidSpeed items={5} loop >
                         <ContainerCreator>
                             <ImgCreatorCarousel src="images/coinbase.png" alt=""/>
                         </ContainerCreator>
-
                     </OwlCarousel>
                 </CreatorPartner>
             </CreatorTextDiv>

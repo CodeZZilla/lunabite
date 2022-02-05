@@ -1,8 +1,5 @@
 import React from 'react';
 import {
-    ButtonStyled, Container,
-    ContainerStyled,
-    HeaderStyled,
     NavStyled,
 } from "../../styles/Header.styled";
 import Logo from "./Logo"

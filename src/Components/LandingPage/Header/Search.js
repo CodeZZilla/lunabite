@@ -7,6 +7,5 @@ export default function Search() {
         <Container>
             <SearchStyled type="text" placeholder="Search NFTs, users, or collections"/>
         </Container>
-
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Banner, ImgTop, ImgSecond, DivLeft, DivRight, ButtonTwoStyled, DivFlex} from "../../styles/Home.styled";
+import {Banner, ImgTop, ImgSecond, DivLeft, DivRight, ButtonTwoStyled} from "../../styles/Home.styled";
 import {Container} from "../../styles/Header.styled";
 
 

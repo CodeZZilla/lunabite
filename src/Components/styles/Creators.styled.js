@@ -175,7 +175,6 @@ export const ImgCreatorCarousel = styled.img`
   height: 70%;
   border: none;
   object-fit: contain;
-  
 `
 
 export const ContainerCreator = styled.div`

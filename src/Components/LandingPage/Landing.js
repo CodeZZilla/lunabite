@@ -5,6 +5,7 @@ import Header from "./Header/Header";
 import HowItWorks from "./HowItWorks/HowItWorks";
 import {Main} from "../styles/Landing.styled";
 import Creators from "./Creators/Creators";
+import Footer from "./Footer/Footer";
 
 
 export default function Landing() {
@@ -15,6 +16,7 @@ export default function Landing() {
             <SliderStyled/>
             <HowItWorks/>
             <Creators/>
+            <Footer/>
         </Main>
     )
 }
