@@ -11,7 +11,6 @@ import Footer from "./Footer/Footer";
 export default function Landing() {
     return (
         <Main>
-            <Header/>
             <Home/>
             <SliderStyled/>
             <HowItWorks/>

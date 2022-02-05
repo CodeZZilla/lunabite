@@ -121,7 +121,7 @@ export const ImgSecond = styled.img`
 export const ButtonTwoStyled = styled.button`
   width: 200px;
   height: 48px;
-  margin-right: 5vw;
+  margin-right: 3vw;
   border-radius: 10px;
   background: ${props => props.background};
   border: 2px solid #A7A7FF;
