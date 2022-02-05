@@ -5,9 +5,9 @@ export const DivSlider = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3%;
-  
-  h1{
+  z-index: 1;
+
+  h1 {
     font-weight: bold;
     font-size: 30px;
     line-height: 40px;
@@ -15,25 +15,32 @@ export const DivSlider = styled.div`
     align-items: center;
     text-align: center;
     color: #6F6F6F;
-    margin-bottom: 3%;
+    margin-bottom: 5vw;
   }
+`
+export const DivH1 = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-self: end;
+  padding: 10px;
 `
 
 export const CardStyled = styled.div`
-  width: 320px;
-  height: 255px;
-  background: #CCCCCC;
+  width: 20vw;
+  height: 45vh;
+  background: white;
   border-radius: 15px;
-  margin-bottom: 200px;
+  border: none;
+  margin-bottom: 10vw;
   display: flex;
   flex-direction: column;
 
   div {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-left: 10px;
-    margin-bottom: 0;
+    align-items: end;
+    padding-bottom:10px;
+    padding-left: 10px ;
   }
 
   h4 {
@@ -43,8 +50,7 @@ export const CardStyled = styled.div`
     line-height: 31px;
     display: flex;
     text-align: end;
-    color: #FFFFFF;
-    margin-left: 20px;
+    color: #6F6F6F;
   }
 
   h3 {
@@ -54,8 +60,7 @@ export const CardStyled = styled.div`
     line-height: 31px;
     display: flex;
     text-align: end;
-    color: #FFFFFF;
-    margin-left: 20px;
+    color: #6F6F6F;
   }
 
   -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
@@ -64,7 +69,12 @@ export const CardStyled = styled.div`
 `
 
 export const ImgSlider = styled.img`
-  
+  width: 100%;
+  height: 70%;
+  border-radius: 15px 15px 0 0;
+  border: none;
+  object-fit: cover;
+
 `
 
 

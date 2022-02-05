@@ -5,11 +5,11 @@ export const NavStyled = styled.nav`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   overflow-y: hidden;
   background-color: white;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   -webkit-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
@@ -95,7 +95,7 @@ export const ButtonStyled = styled.button`
   border-radius: 100px;
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+  margin-right: 1vw;
   
   &:hover{
     -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);

@@ -4,6 +4,7 @@ export const Banner = styled.div`
   width: 100vw;
   height: 80vh;
   z-index: 1;
+  margin-bottom: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +15,7 @@ export const Banner = styled.div`
 
 export const DivRight = styled.div`
   width: 50vw;
-  margin: 10% 0 0 10%;
+  margin: 10% 0 0 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -27,11 +28,9 @@ export const DivRight = styled.div`
     line-height: 40px;
     display: flex;
     align-items: center;
-    left: 147px;
-    top: 131px;
     color: #FFFFFF;
     text-align: start;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
   }
   h2 {
     margin-top: 0;
@@ -66,12 +65,12 @@ export const DivFlex = styled.div`
   margin-top:5%
 `
 
-export const DivLeft = styled(DivRight)`
-
+export const DivLeft = styled(DivRight)` 
+ 
 `
 
 export const ImgTop = styled.img`
-  width: 75%;
+
   height: 15vw;
   object-fit: cover;
   object-position: center;
@@ -96,7 +95,7 @@ export const ImgTop = styled.img`
 `
 
 export const ImgSecond = styled.img`
-  width: 75%;
+
   height: 15vw;
   object-fit: cover;
   object-position: center;
@@ -122,8 +121,7 @@ export const ImgSecond = styled.img`
 export const ButtonTwoStyled = styled.button`
   width: 200px;
   height: 48px;
-  margin-right: 35px;
-  margin-bottom: 7%;
+  margin-right: 5vw;
   border-radius: 10px;
   background: ${props => props.background};
   border: 2px solid #A7A7FF;
