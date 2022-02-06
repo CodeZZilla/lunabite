@@ -22,11 +22,11 @@ export const DivH1 = styled.div`
   display: flex;
   flex-direction: row;
   align-self: end;
-  padding: 10px;
+  padding: 15px;
 `
 
 export const CardStyled = styled.div`
-  width: 20vw;
+  width: 25vw;
   height: 45vh;
   background: white;
   border-radius: 15px;

@@ -37,7 +37,7 @@ export default function Creators() {
 
                 <CreatorPartner>
                     <OwlCarousel className='owl-theme' dots={false} nav={false} animateIn
-                                  autoplay fluidSpeed items={5} loop >
+                                  autoplay fluidSpeed items={5} loop>
                         <ContainerCreator>
                             <ImgCreatorCarousel src="images/coinbase.png" alt=""/>
                         </ContainerCreator>

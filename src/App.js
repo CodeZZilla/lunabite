@@ -5,6 +5,7 @@ import {useRoutes} from "./routes";
 import CommonStore from "./Store/CommonStore";
 import Landing from "./Components/LandingPage/Landing"
 import Header from "./Components/LandingPage/Header/Header";
+import Profile from "./Components/Profile/Profile";
 
 const App = observer(() => {
     return (
