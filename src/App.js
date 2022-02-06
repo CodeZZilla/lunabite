@@ -18,7 +18,7 @@ const App = observer(() => {
                         <Landing/>
                     </Route>
                     <Route path='/profile'>
-                        <Profile/>
+                        <Profile name="Valentyn Kit" nickname="hi_vel"/>
                     </Route>
                 </div>
 

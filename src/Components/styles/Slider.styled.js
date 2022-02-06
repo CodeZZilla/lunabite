@@ -38,7 +38,7 @@ export const CardStyled = styled.div`
   div {
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
     padding-bottom:10px;
     padding-left: 10px ;
   }

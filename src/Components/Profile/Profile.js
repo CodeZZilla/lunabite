@@ -1,20 +1,69 @@
 import React from 'react';
-import Header from "../LandingPage/Header/Header";
 import {
-    ButtonProfile,
     ContentProfile,
     HeaderProfile,
     LeftProfile,
-    MainProfile, ProfileLogo,
+    MainProfile, NFTProfile, ProfileLogo,
     RightProfile
 } from "../styles/Profile.styled";
-import {ButtonCreatorLogo} from "../styles/Creators.styled";
 import Card from "../LandingPage/Slider/Card";
 import {ButtonTwoStyled} from "../styles/Home.styled";
+import SliderStyled from "../LandingPage/Slider/SliderStyled";
 
 
 
-export default function Profile() {
+export default function Profile(props) {
+    let collectedData = {
+        h:"Collected",
+        data:[
+        {
+            cost:"0,1",
+            name:"Valentyn"
+        },
+        {
+            cost:"1,1",
+            name:"Oksana"
+        },
+        {
+            cost:"0,1",
+            name:"Dmitriy"
+        }
+    ]}
+    let createdData = {
+        h:"Created",
+        data:[
+        {
+            cost:"3,2",
+            name:"Taras"
+        },
+        {
+            cost:"9",
+            name:"Gorilla"
+        },
+        {
+            cost:"7,1",
+            name:"Bovda"
+        }
+    ]}
+    let favouriteData = {
+        h:"Favourite",
+        data:[
+        {
+            cost:"4,9",
+            name:"Stovbr"
+        },
+        {
+            cost:"2,3",
+            name:"Queen"
+        },
+        {
+            cost:"8,3",
+            name:"Nike"
+        }
+    ]}
+
+
+
     return (
         <MainProfile>
            <HeaderProfile/>
@@ -30,8 +79,8 @@ export default function Profile() {
                           11.1379 4.98981C11.1379 6.72034 9.73023 8.12823 7.9997 8.12823C6.26917 8.12823 4.86145 6.72034 4.86145
                           4.98981Z" fill="white"/>
                     </svg></ProfileLogo>
-                    <h1>Profile name</h1>
-                    <h4>@hi_vel</h4>
+                    <h1>{props.name}</h1>
+                    <h4>@{props.nickname}</h4>
                     <p>The official Butterball fanclub account. This is a bio section.</p>
                     <div>
                         <ButtonTwoStyled color="white" background="#A7A7FF">Twitter</ButtonTwoStyled>
@@ -43,7 +92,11 @@ export default function Profile() {
                     <Card cost="0,1 LUNA created" name="Butterball"/>
                 </LeftProfile>
             </ContentProfile>
-            {/*<NFTProfile/>*/}
+            <NFTProfile>
+                <SliderStyled {...collectedData}/>
+                <SliderStyled {...createdData}/>
+                <SliderStyled {...favouriteData}/>
+            </NFTProfile>
         </MainProfile>
     )
 }

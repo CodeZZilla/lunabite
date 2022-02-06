@@ -45,7 +45,6 @@ export const RightProfile = styled.div`
     align-items: center;
     color: #494949;
     text-align: start;
-    margin: 0 0 1vh 0;
   }
   
   p {
@@ -75,4 +74,11 @@ export const ProfileLogo = styled.button`
   margin-top: -13vh;
   border: 2px solid white;
     
+`
+
+export const NFTProfile = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 `
