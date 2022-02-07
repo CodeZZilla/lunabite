@@ -3,11 +3,11 @@ import {
     ContentProfile,
     HeaderProfile,
     LeftProfile,
-    MainProfile, NFTProfile, ProfileLogo,
+    MainProfile, NFTProfile, ProfileBanner, ProfileLogo,
     RightProfile
-} from "../styles/Profile.styled";
+} from "../styles/Profile.styled/Profile.styled";
 import Card from "../LandingPage/Slider/Card";
-import {ButtonTwoStyled} from "../styles/Home.styled";
+import {ButtonTwoStyled} from "../styles/Landing.styled/Home.styled";
 import SliderStyled from "../LandingPage/Slider/SliderStyled";
 
 
@@ -62,8 +62,6 @@ export default function Profile(props) {
         }
     ]}
 
-
-
     return (
         <MainProfile>
            <HeaderProfile/>
@@ -97,6 +95,7 @@ export default function Profile(props) {
                 <SliderStyled {...createdData}/>
                 <SliderStyled {...favouriteData}/>
             </NFTProfile>
+            <ProfileBanner/>
         </MainProfile>
     )
 }

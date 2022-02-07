@@ -10,7 +10,6 @@ export const NavStyled = styled.nav`
   overflow-y: hidden;
   background-color: white;
   z-index: 2;
-  position: absolute;
   -webkit-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
   box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);

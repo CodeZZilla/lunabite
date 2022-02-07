@@ -1,5 +1,5 @@
 import React from 'react';
-import {BannerRevert, ButtonBannerRevert, DivText, MainBanner} from "../../styles/HowItWorks.styled";
+import {BannerRevert, ButtonBannerRevert, DivText, MainBanner} from "../../styles/Landing.styled/HowItWorks.styled";
 import BigCard from "./BigCard";
 
 

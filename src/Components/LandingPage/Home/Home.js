@@ -1,6 +1,6 @@
 import React from 'react';
-import {Banner, ImgTop, ImgSecond, DivLeft, DivRight, ButtonTwoStyled} from "../../styles/Home.styled";
-import {Container} from "../../styles/Header.styled";
+import {Banner, ImgTop, ImgSecond, DivLeft, DivRight, ButtonTwoStyled} from "../../styles/Landing.styled/Home.styled";
+import {Container} from "../../styles/Basic.styled/Header.styled";
 
 
 export default function Home() {

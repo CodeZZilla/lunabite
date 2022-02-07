@@ -7,10 +7,10 @@ import {
     CreatorPartner,
     CreatorTextDiv,
     ImgCreator, ImgCreatorCarousel
-} from "../../styles/Creators.styled";
+} from "../../styles/Landing.styled/Creators.styled";
 import CreatorCard from "./CreatorCard";
 import OwlCarousel from "react-owl-carousel";
-import {Container} from "../../styles/Header.styled";
+import {Container} from "../../styles/Basic.styled/Header.styled";
 
 export default function Creators() {
     return (

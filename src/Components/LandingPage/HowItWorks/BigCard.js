@@ -1,5 +1,5 @@
 import React from 'react';
-import {BigCardStyled} from "../../styles/HowItWorks.styled";
+import {BigCardStyled} from "../../styles/Landing.styled/HowItWorks.styled";
 
 
 export default function BigCard(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
-import {Container} from "../../styles/Header.styled";
-import {ButtonFooter, FooterBanner, FooterDiv, InputStyled} from "../../styles/Footer.styled";
+import {Container} from "../../styles/Basic.styled/Header.styled";
+import {ButtonFooter, FooterBanner, FooterDiv, InputStyled} from "../../styles/Landing.styled/FooterLanding.styled";
 
 
 export default function Footer() {

@@ -6,6 +6,7 @@ import CommonStore from "./Store/CommonStore";
 import Landing from "./Components/LandingPage/Landing"
 import Header from "./Components/LandingPage/Header/Header";
 import Profile from "./Components/Profile/Profile";
+import CreateNewNFT from "./Components/CreateNewNFT/CreateNewNFT";
 
 const App = observer(() => {
     return (
@@ -19,6 +20,9 @@ const App = observer(() => {
                     </Route>
                     <Route path='/profile'>
                         <Profile name="Valentyn Kit" nickname="hi_vel"/>
+                    </Route>
+                    <Route path='/create-new-nft'>
+                        <CreateNewNFT/>
                     </Route>
                 </div>
 
