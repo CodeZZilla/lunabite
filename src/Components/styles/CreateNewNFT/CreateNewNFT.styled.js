@@ -6,9 +6,8 @@ export const MainCreateNFT = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  
-
 `
+
 export const ContainerCreateNFT = styled.div`
   width: 100vw;
   display: flex;
@@ -26,7 +25,7 @@ export const ContainerCreateNFT = styled.div`
     display: flex;
     align-items: center;
     color: #494949;
-    margin: 0 0 5vh 0;
+    margin: 0 0 10vh 0;
   }
   
   h2{
@@ -44,7 +43,7 @@ export const ContainerCreateNFT = styled.div`
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 26px;
     display: flex;
     align-items: center;
     max-width: 60vw;
@@ -77,12 +76,14 @@ export const TextInput = styled.input`
 
 export const DecsInput = styled.textarea`
   width: 40vw;
+  height: 30vh;
   padding: 12px 24px;
   font-size: 15px;
   color: #575756;
   border-radius: 10px;
   border: 1px solid #e7e7e7;
   outline: none;
+  font-family: inherit;
 
   &:focus {
     -webkit-box-shadow: 0 0 9px 0 rgba(34, 60, 80, 0.07);
@@ -91,7 +92,29 @@ export const DecsInput = styled.textarea`
   }
 `
 
-export const SelectInput = styled.input`
+export const SelectInput = styled.select`
+  width: 40vw;
+  padding: 12px 24px;
+  font-size: 15px;
+  color: #575756;
+  border-radius: 10px;
+  border: 1px solid #e7e7e7;
+  outline: none;
+  transition: all 375ms ease-in-out;  
+  margin: 0 0 10vh 0;
+  
+  
+  option{
+    font-size: 20px;
+    color: #575756;
+    border: 2px solid #e7e7e7;
+    transition: all .5s ease;
+  }
 
+  &:focus {
+    -webkit-box-shadow: 0 0 9px 0 rgba(34, 60, 80, 0.07);
+    -moz-box-shadow: 0 0 9px 0 rgba(34, 60, 80, 0.07);
+    box-shadow: 0 0 9px 0 rgba(34, 60, 80, 0.07);
+  }
 
 `

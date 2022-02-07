@@ -135,6 +135,10 @@ export const ButtonTwoStyled = styled.button`
   &:hover {
     box-shadow: -1px 6px 10px 0 rgba(120, 60, 20, .2);
   }
+  
+  &:active{
+    background: ${props => props.secondBackground}
+  }
 `
 
 

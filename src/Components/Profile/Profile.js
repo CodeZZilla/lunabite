@@ -81,9 +81,9 @@ export default function Profile(props) {
                     <h4>@{props.nickname}</h4>
                     <p>The official Butterball fanclub account. This is a bio section.</p>
                     <div>
-                        <ButtonTwoStyled color="white" background="#A7A7FF">Twitter</ButtonTwoStyled>
-                        <ButtonTwoStyled color="white" background="#A7A7FF">Discord</ButtonTwoStyled>
-                        <ButtonTwoStyled color="white" background="#A7A7FF">Instagram</ButtonTwoStyled>
+                        <ButtonTwoStyled color="white" secondBackground="#bcbcff" background="#A7A7FF">Twitter</ButtonTwoStyled>
+                        <ButtonTwoStyled color="white" secondBackground="#bcbcff" background="#A7A7FF">Discord</ButtonTwoStyled>
+                        <ButtonTwoStyled color="white" secondBackground="#bcbcff" background="#A7A7FF">Instagram</ButtonTwoStyled>
                     </div>
                 </RightProfile>
                 <LeftProfile>
