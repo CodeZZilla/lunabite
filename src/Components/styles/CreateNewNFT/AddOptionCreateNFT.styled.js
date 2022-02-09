@@ -25,6 +25,7 @@ export const OptionTextDiv = styled.div`
   h3{
     width: 100%;
     margin: 0 0 ;
+    
   }
 
 `

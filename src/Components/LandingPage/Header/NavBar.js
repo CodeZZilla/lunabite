@@ -6,7 +6,7 @@ export default function NavBar() {
     return (
         <Container>
             <UlStyled>
-                <LiStyled><a href="#">Create</a></LiStyled>
+                <LiStyled><a href="/create-new-nft">Create</a></LiStyled>
                 <LiStyled><a href="#">Explore</a></LiStyled>
                 <LiStyled><a href="#">Charts</a></LiStyled>
                 <LiStyled><a href="#">Resources</a></LiStyled>

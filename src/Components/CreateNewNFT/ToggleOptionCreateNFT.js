@@ -5,7 +5,7 @@ import {
     ToggleDivBtn,
     ToggleIcon,
     ToggleTextDiv
-} from "../styles/CreateNewNFT/ToggleOptoinCreateNFT";
+} from "../styles/CreateNewNFT/ToggleOptoinCreateNFT.styled";
 
 
 export default function ToggleOptionCreateNFT(props) {
@@ -16,7 +16,7 @@ export default function ToggleOptionCreateNFT(props) {
                 <h3>{props.name}</h3>
                 <p>{props.desc}</p>
             </ToggleTextDiv>
-            <ToggleDivBtn><ToggleButton/></ToggleDivBtn>
+            <ToggleDivBtn><ToggleButton type={"checkbox"}/></ToggleDivBtn>
         </ToggleDiv>
     )
 }

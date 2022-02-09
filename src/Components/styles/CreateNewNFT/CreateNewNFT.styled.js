@@ -16,8 +16,8 @@ export const ContainerCreateNFT = styled.div`
   text-align: start;
   padding: 0 10vw;
   margin: 5vh 0 0 0;
-  
-  h1{
+
+  h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -27,8 +27,8 @@ export const ContainerCreateNFT = styled.div`
     color: #494949;
     margin: 0 0 10vh 0;
   }
-  
-  h2{
+
+  h2 {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -38,8 +38,8 @@ export const ContainerCreateNFT = styled.div`
     color: #494949;
     margin: 0 0 1vh 0;
   }
-  
-  p{
+
+  p {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -50,6 +50,23 @@ export const ContainerCreateNFT = styled.div`
     color: #494949;
     margin: 0 0 1vh 0;
   }
+`
+
+export const FileNFT = styled.div`
+  max-width: 20vw; /*max to make it responsive*/
+  height: 30vh;
+  margin: 20px 0 0 0;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: lightgrey;
+  border: 2px dashed #555555;
+  border-radius: 10px;
 `
 
 export const OptionsCreateNFT = styled.div`
@@ -100,11 +117,11 @@ export const SelectInput = styled.select`
   border-radius: 10px;
   border: 1px solid #e7e7e7;
   outline: none;
-  transition: all 375ms ease-in-out;  
+  transition: all 375ms ease-in-out;
   margin: 0 0 10vh 0;
-  
-  
-  option{
+
+
+  option {
     font-size: 20px;
     color: #575756;
     border: 2px solid #e7e7e7;
@@ -117,4 +134,32 @@ export const SelectInput = styled.select`
     box-shadow: 0 0 9px 0 rgba(34, 60, 80, 0.07);
   }
 
+`
+
+export const AStyled = styled.a`
+  width: 200px;
+  height: 48px;
+  margin-right: 3vw;
+  border-radius: 10px;
+  background: ${props => props.background};
+  border: 2px solid #A7A7FF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 22px;
+  transition: all 0.3s ease;
+  color: ${props => props.color};
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: -1px 6px 10px 0 rgba(120, 60, 20, .2);
+  }
+  
+  &:active{
+    background: ${props => props.secondBackground}
+  }
 `

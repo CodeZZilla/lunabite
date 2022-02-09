@@ -4,11 +4,14 @@ import {FooterStyled} from "../styles/Basic.styled/Footer.styled";
 import AddOptionCreateNFT from "./AddOptionCreateNFT";
 import ToggleOptionCreateNFT from "./ToggleOptionCreateNFT";
 import {
-    ContainerCreateNFT, DecsInput,
+    AStyled,
+    ContainerCreateNFT, DecsInput, FileNFT,
     MainCreateNFT,
     OptionsCreateNFT, SelectInput,
     TextInput
 } from "../styles/CreateNewNFT/CreateNewNFT.styled";
+import {DropzoneComponent} from "react-dropzone-component";
+import ModalCreatedNFT from "./ModalCreatedNFT";
 
 
 export default function CreateNewNFT(props) {
@@ -59,14 +62,20 @@ export default function CreateNewNFT(props) {
             fill="#6F6F6F"/>
     </svg>
 
-
+    let componentConfig = {
+        iconFiletypes: ['.jpg', '.png', '.gif'],
+        showFiletypeIcon: true,
+        postUrl: '/uploadHandler'
+    };
     return (
         <MainCreateNFT>
             <ContainerCreateNFT>
                 <h1>Create New NFT</h1>
                 <h2>Upload a Image, Video, Audio, or GIF</h2>
                 <p>File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size: 100 MB</p>
-                <div></div>
+                <FileNFT className="drop-zone">
+                    <DropzoneComponent config={componentConfig}/>
+                </FileNFT>
             </ContainerCreateNFT>
             <ContainerCreateNFT>
                 <h2>Name of Creation</h2>
@@ -103,11 +112,13 @@ export default function CreateNewNFT(props) {
                 <AddOptionCreateNFT svg={statsSvg} name="Stats" desc="Stats show up underneath your item, are clickable,
                                                                     and can be filtered in your collection's sidebar."/>
                 <hr/>
-                <ToggleOptionCreateNFT svg={lockSvg} name={"Unlockable Content"}
-                                       desc={"Include unlockable content that can only" +
-                                       " be revealed by the owner of the item."}/>
+                <ToggleOptionCreateNFT svg={lockSvg} name="Unlockable Content"
+                                       desc="Include unlockable content that can only
+                                       be revealed by the owner of the item."/>
                 <hr/>
-                <ToggleOptionCreateNFT svg={hotSvg} name={"Explicit & Sensitive Content"} desc={"Set this item as explicit and sensitive content"}/>
+                <ToggleOptionCreateNFT svg={hotSvg} name="Explicit & Sensitive Content" desc="Set this item as
+                                                                                        explicit and sensitive content.
+                                                                                        Be revealed by the owner of the item."/>
             </OptionsCreateNFT>
             <ContainerCreateNFT>
                 <h2>Supply</h2>
@@ -118,9 +129,9 @@ export default function CreateNewNFT(props) {
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </SelectInput>
-                <ButtonTwoStyled color="white" background="#A7A7FF" secondBackground="#bcbcff"
-                                 onClick={() => console.log("Hello world")}>Create</ButtonTwoStyled>
+                <AStyled color="white" href="#demo-modal" background="#A7A7FF" secondBackground="#bcbcff">Create</AStyled>
             </ContainerCreateNFT>
+            <ModalCreatedNFT name={"Benuk"}/>
             <FooterStyled/>
         </MainCreateNFT>
     )

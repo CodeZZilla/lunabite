@@ -30,6 +30,11 @@ export const ContainerLogo = styled.div`
   justify-content: center;
   height: 10vh;
   width: 15vw;
+  
+  a{
+    text-decoration: none;
+    color: #282c34;
+  }
 `
 
 export const SearchStyled = styled.input`
