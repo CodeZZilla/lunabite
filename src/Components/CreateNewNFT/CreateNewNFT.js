@@ -1,6 +1,6 @@
 import React from "react"
-import {ButtonTwoStyled} from "../styles/Landing.styled/Home.styled";
-import {FooterStyled} from "../styles/Basic.styled/Footer.styled";
+import {ButtonTwoStyled} from "../styles/Landing/Home.styled";
+import {FooterStyled} from "../styles/Basic/Footer.styled";
 import AddOptionCreateNFT from "./AddOptionCreateNFT";
 import ToggleOptionCreateNFT from "./ToggleOptionCreateNFT";
 import {

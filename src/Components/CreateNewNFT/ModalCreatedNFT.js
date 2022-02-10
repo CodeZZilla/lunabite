@@ -6,7 +6,7 @@ import {
     ModalDivHead,
     ModalMainDiv
 } from "../styles/CreateNewNFT/ModalCreatedNFT.styled";
-import {ButtonTwoStyled} from "../styles/Landing.styled/Home.styled";
+import {ButtonTwoStyled} from "../styles/Landing/Home.styled";
 import {DropzoneComponent} from "react-dropzone-component";
 import {FileNFT} from "../styles/CreateNewNFT/CreateNewNFT.styled";
 

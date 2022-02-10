@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, ContainerLogo, ContainerStyled, LogoStyled} from "../../styles/Basic.styled/Header.styled";
+import {Container, ContainerLogo, ContainerStyled, LogoStyled} from "../../styles/Basic/Header.styled";
 
 
 export default function Logo() {

@@ -122,7 +122,7 @@ export const ButtonTwoStyled = styled.button`
   width: 200px;
   height: 48px;
   margin-right: 3vw;
-  border-radius: 10px;
+  border-radius: 7px;
   background: ${props => props.background};
   border: 2px solid #A7A7FF;
   font-style: normal;

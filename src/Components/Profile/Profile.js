@@ -5,9 +5,9 @@ import {
     LeftProfile,
     MainProfile, NFTProfile, ProfileBanner, ProfileLogo,
     RightProfile
-} from "../styles/Profile.styled/Profile.styled";
+} from "../styles/Profile/Profile.styled";
 import Card from "../LandingPage/Slider/Card";
-import {ButtonTwoStyled} from "../styles/Landing.styled/Home.styled";
+import {ButtonTwoStyled} from "../styles/Landing/Home.styled";
 import SliderStyled from "../LandingPage/Slider/SliderStyled";
 
 

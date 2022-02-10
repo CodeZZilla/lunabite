@@ -7,6 +7,15 @@ import Landing from "./Components/LandingPage/Landing"
 import Header from "./Components/LandingPage/Header/Header";
 import Profile from "./Components/Profile/Profile";
 import CreateNewNFT from "./Components/CreateNewNFT/CreateNewNFT";
+import ItemPageOwner from "./Components/ItemPageOwner/ItemPageOwner";
+
+let data = {
+    name:"YarikCoin",
+    collectionOf:"Kanchelaria",
+    views:10,
+    likes:3232,
+    owner:"Sifon"
+}
 
 const App = observer(() => {
     return (
@@ -23,6 +32,9 @@ const App = observer(() => {
                     </Route>
                     <Route path='/create-new-nft'>
                         <CreateNewNFT/>
+                    </Route>
+                    <Route path='/item-owner'>
+                        <ItemPageOwner {...data}/>
                     </Route>
                 </div>
 

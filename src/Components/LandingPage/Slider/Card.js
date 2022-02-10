@@ -1,6 +1,6 @@
 import React from 'react';
-import {CardStyled, DivH1, ImgSlider} from "../../styles/Basic.styled/Slider.styled";
-import {ButtonStyled} from "../../styles/Basic.styled/Header.styled";
+import {CardStyled, DivH1, ImgSlider} from "../../styles/Basic/Slider.styled";
+import {ButtonStyled} from "../../styles/Basic/Header.styled";
 
 
 export default function Card(props) {

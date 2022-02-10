@@ -4,7 +4,7 @@ import {
     CreatorCardStyled,
     DivCreatorH1, DivCreatorH4,
     ImgCreator
-} from "../../styles/Landing.styled/Creators.styled";
+} from "../../styles/Landing/Creators.styled";
 
 
 export default function CreatorCard(props) {
