@@ -10,7 +10,6 @@ export default function Header() {
     return (
         <NavStyled>
             <Logo/>
-            <Search/>
             <NavBar/>
         </NavStyled>
     )

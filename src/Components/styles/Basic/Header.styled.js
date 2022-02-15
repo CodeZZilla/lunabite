@@ -3,13 +3,12 @@ import styled from "styled-components";
 export const NavStyled = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   width: 100vw;
-  height: 10vh;
-  overflow-y: hidden;
+  height: 8vh;
   background-color: white;
-  z-index: 2;
+  z-index: 9999;
   -webkit-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
   box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
@@ -20,15 +19,15 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 10vh;
+  height: 100%;
 `
 
 export const ContainerLogo = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: center;
-  height: 10vh;
+  justify-content: start;
+  height: 100%;
   width: 15vw;
   
   a{
@@ -38,15 +37,15 @@ export const ContainerLogo = styled.div`
 `
 
 export const SearchStyled = styled.input`
-  width: 40vw;
-  padding: 12px 24px;
+  width: 45vw;
+  padding: 15px 20px;
   font-size: 15px;
   color: #575756;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-size: 18px 18px;
+  background-size: 20px 20px;
   background-position: 95% 50%;
-  border-radius: 25px;
+  border-radius: 15px;
   border: 1px solid #e7e7e7;
   outline: none;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' 
@@ -57,8 +56,7 @@ export const SearchStyled = styled.input`
   &:focus {
     -webkit-box-shadow: -1px 0 8px -1px rgba(34, 60, 80, 1);
     -moz-box-shadow: -1px 0 8px -1px rgba(34, 60, 80, 1);
-    box-shadow: -1px 0 8px -1px rgba(34, 60, 80, 1);
-
+    box-shadow: -1px 0 6px -1px rgba(34, 60, 80, 1);
   }
 `
 
@@ -68,12 +66,11 @@ export const UlStyled = styled.ul`
   align-items: center;
   margin: 0 auto;
   list-style: none;
-  height: 10vh;
+  height: 100%;
 `
 
-export const LiStyled = styled.li`
-  width: 100px;
-  height: 10vh;
+export const LiStyled = styled.div`
+  width: 7vw;
   transition: background-position-x 0.9s linear;
   text-align: center;
   font-weight: 600;
@@ -82,7 +79,7 @@ export const LiStyled = styled.li`
   justify-content: center;
 
   a {
-    font-size: 16px;
+    font-size: 18px;
     color: #6F6F6F;
     text-decoration: none;
     transition: all 0.45s;
@@ -91,6 +88,13 @@ export const LiStyled = styled.li`
   a:hover{
     color: black;
   }
+`
+
+export const HoverMenuItem = styled.div`
+  position: absolute;
+  z-index: 10299;
+  top: 100px;
+
 `
 
 export const ButtonStyled = styled.button`

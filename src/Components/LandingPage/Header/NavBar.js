@@ -1,12 +1,30 @@
 import React from 'react';
-import {ButtonStyled, Container, ContainerStyled, LiStyled, UlStyled} from "../../styles/Basic/Header.styled";
+import {ButtonStyled, Container, HoverMenuItem, LiStyled, UlStyled} from "../../styles/Basic/Header.styled";
+import {Link} from "react-router-dom";
+import Search from "./Search";
 
 
 export default function NavBar() {
     return (
         <Container>
+            <Search/>
             <UlStyled>
-                <LiStyled><a href="/create-new-nft">Create</a></LiStyled>
+                <LiStyled><Link to="/create-new-nft">Create</Link></LiStyled>
+                <HoverMenuItem>
+                    <Link to="/create-new-nft">All NFTs</Link>
+                </HoverMenuItem>
+                <HoverMenuItem>
+                    <Link to="/create-new-nft">Art</Link>
+                </HoverMenuItem>
+                <HoverMenuItem>
+                    <Link to="/create-new-nft">Collectibles</Link>
+                </HoverMenuItem>
+                <HoverMenuItem>
+                    <Link to="/create-new-nft">Domain Name</Link>
+                </HoverMenuItem>
+                <HoverMenuItem>
+                    <Link to="/create-new-nft">Music</Link>
+                </HoverMenuItem>
                 <LiStyled><a href="#">Explore</a></LiStyled>
                 <LiStyled><a href="#">Charts</a></LiStyled>
                 <LiStyled><a href="#">Resources</a></LiStyled>
