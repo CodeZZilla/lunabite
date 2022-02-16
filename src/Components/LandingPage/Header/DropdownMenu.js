@@ -55,7 +55,7 @@ export default function DropdownMenu() {
                         <DropdownItem
                             onClick={() => disconnect()}
                             link="/">
-                            Settings
+                            Disconnect
                         </DropdownItem>
                     </>
 
