@@ -4,7 +4,6 @@ import {ButtonTwoStyled} from "../styles/Landing/Home.styled";
 import {
     ItemPageImg,
     ItemPageOwnerDesc,
-    ItemPageOwnerDescContent,
     ItemPageOwnerDescContentLeft,
     ItemPageOwnerDescContentRight,
     ItemPageOwnerDescText,
@@ -20,7 +19,6 @@ import {Container} from "../styles/Basic/Header.styled";
 import 'react-accessible-accordion/dist/fancy-example.css';
 import Accordion from "../Accordions/Accodion";
 import AccordionBordered from "../Accordions/AccordionBordered";
-import BootstrapTable from 'react-bootstrap-table-next';
 
 
 
@@ -181,7 +179,7 @@ export default function ItemPageOwner(props) {
                 </ItemPageOwnerDescContentLeft>
             </ItemPageOwnerDesc>
             <ItemPageOwnerTable>
-                <AccordionBordered svg={vector} title="Properties" content="<BootstrapTable keyField='id' data={ products } columns={ columns } />"/>
+                {/*<AccordionBordered svg={vector} title="Properties" content="<BootstrapTable keyField='id' data={ products } columns={ columns } />"/>*/}
             </ItemPageOwnerTable>
             <div>
                 <SliderStyled {...createdData}/>

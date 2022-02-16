@@ -1,34 +1,46 @@
-import React from 'react';
-import {ButtonStyled, Container, HoverMenuItem, LiStyled, UlStyled} from "../../styles/Basic/Header.styled";
+import React, {useState} from 'react';
+import {
+    ButtonDropDown,
+    ButtonStyled,
+    Container,
+    HoverMenuItem,
+    LiStyled,
+    MenuDropDown, MenuItem,
+    UlStyled
+} from "../../styles/Basic/Header.styled";
 import {Link} from "react-router-dom";
 import Search from "./Search";
+import {Transition} from 'react-spring';
+import {useWallet, WalletStatus} from '@terra-money/wallet-provider'
+
+const menuItems = ['Home', 'Profile', 'Order History', 'Sign out'];
+
+/*export default function NavBar() {
+    /!*const {
+        status,
+        availableConnectTypes,
+        availableInstallTypes,
+        connect,
+        install,
+        disconnect,
+    } = useWallet()
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleBtnClick = () => {
+        setMenuOpen(!menuOpen)
+    };
 
 
-export default function NavBar() {
     return (
         <Container>
-            <Search/>
+
             <UlStyled>
                 <LiStyled><Link to="/create-new-nft">Create</Link></LiStyled>
-                <HoverMenuItem>
-                    <Link to="/create-new-nft">All NFTs</Link>
-                </HoverMenuItem>
-                <HoverMenuItem>
-                    <Link to="/create-new-nft">Art</Link>
-                </HoverMenuItem>
-                <HoverMenuItem>
-                    <Link to="/create-new-nft">Collectibles</Link>
-                </HoverMenuItem>
-                <HoverMenuItem>
-                    <Link to="/create-new-nft">Domain Name</Link>
-                </HoverMenuItem>
-                <HoverMenuItem>
-                    <Link to="/create-new-nft">Music</Link>
-                </HoverMenuItem>
                 <LiStyled><a href="#">Explore</a></LiStyled>
                 <LiStyled><a href="#">Charts</a></LiStyled>
                 <LiStyled><a href="#">Resources</a></LiStyled>
-                <ButtonStyled>
+                <ButtonStyled onClick={handleBtnClick}>
                     <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.728 8.62207C11.8303 7.79187 12.5444 6.47278 12.5444 4.98981C12.5444 2.48401 10.5057 0.445312
                         7.9997 0.445312C5.4939 0.445312 3.4552 2.48401 3.4552 4.98981C3.4552 6.47278 4.16913 7.79187 5.27143
@@ -39,6 +51,53 @@ export default function NavBar() {
                           4.98981Z" fill="white"/>
                     </svg>
                 </ButtonStyled>
+                <Transition unique reset items={menuOpen} from={{
+                        opacity: 0,
+                        height: 0,
+                        transform: 'translateY(-10%)',
+                    }} enter={{
+                        opacity: 1,
+                        height: 'auto',
+                        transform: 'translate(0%)',
+                    }}
+                            leave={{opacity: 0}}>
+                    {item =>
+                        item &&
+                        (props => (
+                            <MenuDropDown style={props} className="menu">
+                                {status === WalletStatus.WALLET_NOT_CONNECTED && (
+                                    <>
+                                        {availableInstallTypes.map((connectType) => (
+                                            <MenuItem className="menuItem">
+                                                <ButtonDropDown
+                                                    key={`install-${connectType}`}
+                                                    onClick={() => install(connectType)}>
+                                                    Install Terra Wallet
+                                                </ButtonDropDown>
+                                            </MenuItem>
+                                        ))}
+                                        {availableConnectTypes.map((connectType) => (
+                                            <MenuItem className="menuItem">
+                                                <ButtonDropDown key={`connect-${connectType}`}
+                                                                onClick={() => connect(connectType)}>
+                                                    Connect {connectType}
+                                                </ButtonDropDown>
+                                            </MenuItem>
+                                        ))}
+                                    </>)}
+                                {status === WalletStatus.WALLET_CONNECTED && (
+                                    <MenuItem className="menuItem">
+                                        <ButtonDropDown color="white" background="#A7A7FF"
+                                                        secondBackground="#bcbcff"
+                                                        onClick={() => disconnect()}>
+                                            Disconnect
+                                        </ButtonDropDown>
+                                    </MenuItem>
+                                )}
+                            </MenuDropDown>
+                        ))
+                    }
+                </Transition>
                 <ButtonStyled>
                     <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -50,7 +109,22 @@ export default function NavBar() {
                     </svg>
                 </ButtonStyled>
             </UlStyled>
-
         </Container>
     )
+*!/
+    <NavItem icon={<PlusIcon/>}/>
+    <NavItem icon={<BellIcon/>}/>
+    <NavItem icon={<MessengerIcon/>}/>
+
+    <NavItem icon={<CaretIcon/>}>
+        <DropdownMenu></DropdownMenu>
+    </NavItem>
+}*/
+
+export default function Navbar(props) {
+    return (
+        <nav className="navbar">
+            <ul className="navbar-nav">{props.children}</ul>
+        </nav>
+    );
 }

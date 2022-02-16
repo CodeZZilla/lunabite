@@ -29,8 +29,8 @@ export const ContainerLogo = styled.div`
   justify-content: start;
   height: 100%;
   width: 15vw;
-  
-  a{
+
+  a {
     text-decoration: none;
     color: #282c34;
   }
@@ -69,7 +69,7 @@ export const UlStyled = styled.ul`
   height: 100%;
 `
 
-export const LiStyled = styled.div`
+export const LiStyled = styled.li`
   width: 7vw;
   transition: background-position-x 0.9s linear;
   text-align: center;
@@ -84,8 +84,8 @@ export const LiStyled = styled.div`
     text-decoration: none;
     transition: all 0.45s;
   }
-  
-  a:hover{
+
+  a:hover {
     color: black;
   }
 `
@@ -98,16 +98,71 @@ export const HoverMenuItem = styled.div`
 `
 
 export const ButtonStyled = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: radial-gradient(circle at 100%, #80B1FF, #81C7EE 10%, #83FFC1 100%, #333 10%);
   border-style: none;
   border-radius: 100px;
-  width: 30px;
-  height: 30px;
-  margin-right: 1vw;
+  --button-size: calc(var(--nav-size) * 0.5);
+  width: calc(var(--button-size) * 1.2);
+  height: calc(var(--button-size) * 1.2);
+  text-align: start;
+  font-weight: 300;
+  font-size: 16px;
+  color: #6F6F6F;
+  text-decoration: none;
   
-  &:hover{
+  &:hover {
     -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
     box-shadow: 0 2px 2px 2px rgba(34, 60, 80, 0.2);
+  }
+`
+
+export const MenuDropDown = styled.div`
+  top: 8vh;
+  right: 5vw;
+  background: white;
+  border: 0;
+  position: absolute;
+  z-index: 9999;
+  border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: -2px 2px 2px 0px rgba(34, 60, 80, 0.2);
+`
+
+export const MenuItem = styled.div`
+  border-radius: 10px 10px 10px 10px;
+  padding: 4px;
+  
+  a{
+    outline: none;
+    text-decoration: none;
+    color: #282c34;
+  }
+  
+  a:hover{
+    color:black;
+  }
+`
+
+export const ButtonDropDown = styled.button`
+  width: 200px;
+  height: 48px;
+  background:white;
+  border: .1px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  transition: all 0.3s ease;
+  color: #6F6F6F;
+  border-radius: 10px 10px 10px 10px;
+
+  &:hover {
+    box-shadow: -1px 2px 5px 1px rgba(120, 60, 20, .2);
+    color: black;
   }
 `

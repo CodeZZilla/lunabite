@@ -16,5 +16,7 @@
     <orderEntry type="library" name="react-bootstrap-table-all" level="application" />
     <orderEntry type="library" name="react-bootstrap-table" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="react-bootstrap-table" level="application" />
+    <orderEntry type="library" name="react-bootstrap-table-all" level="application" />
   </component>
 </module>

@@ -1,9 +1,20 @@
 import React from 'react';
 import {Banner, ImgTop, ImgSecond, DivLeft, DivRight, ButtonTwoStyled} from "../../styles/Landing/Home.styled";
 import {Container} from "../../styles/Basic/Header.styled";
+import ModalSuccess from "../Header/ModalSuccess";
+import {useWallet, WalletStatus} from "@terra-money/wallet-provider";
 
 
 export default function Home() {
+    const {
+        status,
+        availableConnectTypes,
+        availableInstallTypes,
+        connect,
+        install,
+        disconnect,
+    } = useWallet()
+
     return (
         <Banner>
             <DivRight>
@@ -24,6 +35,11 @@ export default function Home() {
                 <ImgSecond src="images/first.png" alt=""/>
                 <ImgTop src="images/first.png" alt=""/>
             </DivLeft>
+            {
+                status === WalletStatus.WALLET_CONNECTED ?
+                    <ModalSuccess/> : null
+            }
+
         </Banner>
     )
 }
