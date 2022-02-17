@@ -10,6 +10,25 @@ import Navbar from "./NavBar";
 import NavItem from "./NavItem";
 import DropdownMenu from "./DropdownMenu";
 import NavButton from "./NavButton";
+import {Dropdown} from "./Dropdown";
+
+const someItems = [
+    {
+        title: "some",
+        text: "some",
+        link: 'google.com'
+    },
+    {
+        title: "some1",
+        text: "some1",
+        link: 'google.com'
+    },
+    {
+        title: "some2",
+        text: "some2",
+        link: 'google.com'
+    },
+]
 
 export default function Header() {
     return (
@@ -20,7 +39,12 @@ export default function Header() {
     <Navbar>
         <Logo/>
         <Search/>
-        <NavItem link="/create-new-nft" name="Create" />
+        {/*<NavItem link="/create-new-nft" name="Create" />*/}
+        <Dropdown
+            items={someItems}
+            text={"Create"}
+            link={"/create-new-nft"}
+        />
         <NavItem link="/profile" name="Explore"/>
         <NavItem link="/item-owner" name="Charts"/>
         <NavItem link="/" name="Resources"/>

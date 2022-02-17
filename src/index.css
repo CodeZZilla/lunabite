@@ -111,6 +111,7 @@ a {
 
 .menu {
   width: 100%;
+  top: 30px !important;
 }
 
 .menu-item {
@@ -137,6 +138,7 @@ a {
 
 .menu-item:hover {
   color: black;
+  background: rgba(180, 180, 180, 0.93);
   box-shadow: 0 0 10px 5px rgba(136, 136, 136, 0.1);
 }
 
