@@ -23,8 +23,8 @@ export default function Home() {
                 </h1>
                 <h2>LunaBite is the marketplace to bring your creations to life.</h2>
                 <Container>
-                    <ButtonTwoStyled secondBackground="#bcbcff" color="white" background="#A7A7FF">Start Creating</ButtonTwoStyled>
-                    <ButtonTwoStyled secondBackground="#bcbcff" color="#A7A7FF" background="#FFFFFF">Explore</ButtonTwoStyled>
+                    <ButtonTwoStyled secondBackground="#bcbcff" color="white" secondColor="black" background="#A7A7FF">Start Creating</ButtonTwoStyled>
+                    <ButtonTwoStyled secondBackground="#bcbcff" color="#A7A7FF" secondColor="black" background="#FFFFFF">Explore</ButtonTwoStyled>
                 </Container>
                 <Container>
                     <a href="#"><i className="fas fa-caret-down"/></a>
@@ -32,8 +32,8 @@ export default function Home() {
                 </Container>
             </DivRight>
             <DivLeft>
-                <ImgSecond src="images/first.png" alt=""/>
                 <ImgTop src="images/first.png" alt=""/>
+                <ImgSecond src="images/first.png" alt=""/>
             </DivLeft>
             {
                 status === WalletStatus.WALLET_CONNECTED ?

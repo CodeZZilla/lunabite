@@ -18,7 +18,7 @@ export default function ModalSuccess() {
         setTimeout(() => {
             setIsVisible(false)
         }, 4000)
-    },[])
+    })
 
     return (
         <div className={"modal-container animation-target success " + (!isVisible ? 'display-none' : '')}>

@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const Banner = styled.div`
+  margin-bottom: 10vh;
   width: 100vw;
-  height: 80vh;
+  height: 70vh;
   z-index: 1;
-  margin-bottom: 20vh;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: row;
   background: linear-gradient(180deg, #FFA4D4 0%, rgba(255, 164, 212, 0.625) 63.02%,
@@ -22,10 +21,11 @@ export const DivRight = styled.div`
   align-items: flex-start;
   
   h1 {
+    max-width: 70vw;
     font-style: normal;
     font-weight: bold;
-    font-size: 38px;
-    line-height: 40px;
+    font-size: 72px;
+    line-height: 70px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
@@ -34,10 +34,11 @@ export const DivRight = styled.div`
   }
   h2 {
     margin-top: 0;
+    max-width: 38vw;
     font-style: normal;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 31px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
     display: flex;
     align-items: start;
     text-align: start;
@@ -62,6 +63,7 @@ export const DivRight = styled.div`
 
 export const DivFlex = styled.div`
   display: flex;
+  flex-direction: row;
   margin-top:5%
 `
 
@@ -70,7 +72,9 @@ export const DivLeft = styled(DivRight)`
 `
 
 export const ImgTop = styled.img`
-
+  position: absolute;
+  top:20vh;
+  right: 30vw;
   height: 15vw;
   object-fit: cover;
   object-position: center;
@@ -86,12 +90,6 @@ export const ImgTop = styled.img`
     transition-property: box-shadow, -moz-box-shadow, -webkit-box-shadow;
     transition-duration: 1s, 1s;
   }
- /*display: none;
-  margin-top: 7%;
-  position: absolute;
-  background: #FFFFFF;
-  border-radius: 10px;
-  */
 `
 
 export const ImgSecond = styled.img`
@@ -100,10 +98,6 @@ export const ImgSecond = styled.img`
   object-fit: cover;
   object-position: center;
   border-radius: 20px;
-  /*
-  border-radius: 10px;
-  display: none;
-  */
   -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.22);
   box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.22);
@@ -137,6 +131,7 @@ export const ButtonTwoStyled = styled.button`
   }
   
   &:active{
+    color: ${props => props.secondColor};
     background: ${props => props.secondBackground}
   }
 `
