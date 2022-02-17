@@ -1,53 +1,146 @@
 import React from 'react';
-import {
-    ButtonStyled,
-    NavStyled,
-} from "../../styles/Basic/Header.styled";
 import Logo from "./Logo"
 import Search from "./Search";
-import NavBar from "./NavBar";
 import Navbar from "./NavBar";
 import NavItem from "./NavItem";
 import DropdownMenu from "./DropdownMenu";
 import NavButton from "./NavButton";
 import {Dropdown} from "./Dropdown";
+import HomeIcon from "../../../Icons/IconWallet";
+import ImageAspectRatioOutlinedIcon from '@mui/icons-material/ImageAspectRatioOutlined';
+import {useWallet} from "@terra-money/wallet-provider";
 
-const someItems = [
+/*const {
+    status,
+    availableConnectTypes,
+    availableInstallTypes,
+    connect,
+    install,
+    disconnect,
+} = useWallet()*/
+
+const itemsOfCreate = [
     {
-        title: "some",
-        text: "some",
-        link: 'google.com'
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
     },
     {
-        title: "some1",
-        text: "some1",
-        link: 'google.com'
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
     },
     {
-        title: "some2",
-        text: "some2",
-        link: 'google.com'
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
     },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    }
 ]
+const itemsOfCreate1 = [
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    }
+]
+const itemsOfCreate2 = [
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    }
+]
+const itemsOfCreate3 = [
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    }
+]
+/*const itemsOfCreate4 = [
+    {
+        text: availableConnectTypes.,
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    },
+    {
+        text: "All NFTs",
+        link: '/create-new-nft',
+        icon: <ImageAspectRatioOutlinedIcon fontSize="medium"/>
+    }
+]*/
+
 
 export default function Header() {
     return (
-        /*<NavStyled>
-
-            <NavBar/>
-        </NavStyled>*/
     <Navbar>
         <Logo/>
         <Search/>
         {/*<NavItem link="/create-new-nft" name="Create" />*/}
-        <Dropdown
-            items={someItems}
-            text={"Create"}
-            link={"/create-new-nft"}
-        />
-        <NavItem link="/profile" name="Explore"/>
-        <NavItem link="/item-owner" name="Charts"/>
-        <NavItem link="/" name="Resources"/>
+        <Dropdown items={itemsOfCreate} text={"Create"} link={"/create-new-nft"}/>
+        <Dropdown items={itemsOfCreate1} text={"Explore"} link={"/profile"}/>
+        <Dropdown items={itemsOfCreate2} text={"Charts"} link={"/item-owner"}/>
+        <Dropdown items={itemsOfCreate3} text={"Resources"} link={"/"}/>
         <NavButton>
             <DropdownMenu/>
         </NavButton>

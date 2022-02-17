@@ -6,7 +6,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10ms linear;
   }
 }
 
@@ -52,7 +52,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   border: none;
   vertical-align: middle;
-  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.2s ease;
   margin-left: auto; /* Strictly for positioning */
 }
 
@@ -73,7 +73,7 @@
 
 .menu {
   background: #ffffff;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   position: absolute;
   top: 60px;
   right: 0;
@@ -83,13 +83,13 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
-  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease, visibility 0.2s;
 }
 
 .menu.active {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateY(12%);
 }
 
 .menu ul {
@@ -98,8 +98,9 @@
   margin: 0;
 }
 
-.menu li {
-  border-bottom: 1px solid #dddddd;
+.menu li:hover {
+  color: black;
+  box-shadow: 0 0 10px 5px rgba(136, 136, 136, 0.1);
 }
 
 .menu li a {

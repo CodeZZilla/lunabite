@@ -42,6 +42,12 @@ a {
   text-decoration: none;;
 }
 
+i{
+  display: flex;
+  margin-left: 1vw;
+  align-items: center;
+}
+
 /* Top Navigation Bar */
 
 /* <nav> */
