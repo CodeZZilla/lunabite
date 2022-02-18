@@ -13,19 +13,20 @@ export const Banner = styled.div`
 `
 
 export const DivRight = styled.div`
-  width: 50vw;
-  margin: 10% 0 0 5%;
+  width: 53vw;
+  margin-top: 15vh;
+  margin-left: 5vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
   
   h1 {
-    max-width: 70vw;
+    max-width: max-content;
     font-style: normal;
     font-weight: bold;
-    font-size: 72px;
-    line-height: 70px;
+    font-size: 50px;
+    line-height: 50px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
@@ -67,16 +68,19 @@ export const DivFlex = styled.div`
   margin-top:5%
 `
 
-export const DivLeft = styled(DivRight)` 
- 
+export const DivLeft = styled(DivRight)`
+  width:47vw;
+  margin-top: 10vh;
 `
 
 export const ImgTop = styled.img`
-  position: absolute;
-  top:20vh;
-  right: 30vw;
+  position: relative;
+  top:0;
+  right: 0;
   height: 15vw;
+  width: 27vw;
   object-fit: cover;
+  z-index: 2;
   object-position: center;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.22);
@@ -93,7 +97,11 @@ export const ImgTop = styled.img`
 `
 
 export const ImgSecond = styled.img`
-
+  position: relative;
+  top: -10vh;
+  right: -10vw;
+  z-index: 1;
+  width: 27vw;
   height: 15vw;
   object-fit: cover;
   object-position: center;
@@ -115,7 +123,7 @@ export const ImgSecond = styled.img`
 export const ButtonTwoStyled = styled.button`
   width: 200px;
   height: 48px;
-  margin-right: 3vw;
+  margin-right: 1.5vw;
   border-radius: 7px;
   background: ${props => props.background};
   border: 2px solid #A7A7FF;

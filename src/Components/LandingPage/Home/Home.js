@@ -32,7 +32,7 @@ export default function Home() {
                 </Container>
             </DivRight>
             <DivLeft>
-                <ImgTop src="images/first.png" alt=""/>
+                <ImgTop src="images/third.png" alt=""/>
                 <ImgSecond src="images/first.png" alt=""/>
             </DivLeft>
             {

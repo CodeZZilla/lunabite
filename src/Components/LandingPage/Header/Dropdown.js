@@ -12,9 +12,7 @@ export const Dropdown = ({text, link, items}) => {
     const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
 
     return (
-            <div className="menu-container"
-                 onMouseLeave={()=>setIsActive(!isActive)}
-                 onMouseEnter={()=>setIsActive(!isActive)}>
+            <div className="menu-container" onMouseLeave={()=>setIsActive(!isActive)} onMouseEnter={()=>setIsActive(true)} >
                 <nav className="nav-item">
                     <Link to={link} className="icon-button">
                         {text}
@@ -28,7 +26,7 @@ export const Dropdown = ({text, link, items}) => {
                                     <i>
                                         {item.icon}
                                     </i>
-                                    <a href={item.link}>{item.text}</a>
+                                    <Link to={item.link}>{item.text}</Link>
                                 </div>
 
                             </li>
