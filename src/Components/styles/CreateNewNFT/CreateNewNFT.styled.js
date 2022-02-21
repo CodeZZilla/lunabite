@@ -14,18 +14,18 @@ export const ContainerCreateNFT = styled.div`
   flex-direction: column;
   align-items: start;
   text-align: start;
-  padding: 0 10vw;
-  margin: 5vh 0 0 0;
+  padding: 0 27.5vw;
+  margin: 2.5vh 0 0 0;
 
   h1 {
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 43px;
     line-height: 40px;
     display: flex;
     align-items: center;
-    color: #494949;
-    margin: 0 0 10vh 0;
+    color: #000000;
+    margin: 0 0 2.5vh 0;
   }
 
   h2 {
@@ -35,14 +35,14 @@ export const ContainerCreateNFT = styled.div`
     line-height: 24px;
     display: flex;
     align-items: center;
-    color: #494949;
+    color: #000000;
     margin: 0 0 1vh 0;
   }
 
   p {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 26px;
     display: flex;
     align-items: center;
@@ -50,10 +50,18 @@ export const ContainerCreateNFT = styled.div`
     color: #494949;
     margin: 0 0 1vh 0;
   }
+
+  hr{
+    width: 100%;
+  }
+`
+
+export const ContainerCreateNFTTop = styled(ContainerCreateNFT)`
+  margin: 15vh 0 0 0;
 `
 
 export const FileNFT = styled.div`
-  max-width: 20vw; /*max to make it responsive*/
+  max-width: 20vw; 
   height: 30vh;
   margin: 20px 0 0 0;
   padding: 25px;
@@ -69,13 +77,8 @@ export const FileNFT = styled.div`
   border-radius: 10px;
 `
 
-export const OptionsCreateNFT = styled.div`
-
-
-`
-
 export const TextInput = styled.input`
-  width: 40vw;
+  width: 100%;
   padding: 12px 24px;
   font-size: 15px;
   color: #575756;
@@ -92,8 +95,8 @@ export const TextInput = styled.input`
 `
 
 export const DecsInput = styled.textarea`
-  width: 40vw;
-  height: 30vh;
+  width: 100%;
+  height: 20vh;
   padding: 12px 24px;
   font-size: 15px;
   color: #575756;
@@ -110,7 +113,7 @@ export const DecsInput = styled.textarea`
 `
 
 export const SelectInput = styled.select`
-  width: 40vw;
+  width: 100%;
   padding: 12px 24px;
   font-size: 15px;
   color: #575756;
@@ -118,7 +121,7 @@ export const SelectInput = styled.select`
   border: 1px solid #e7e7e7;
   outline: none;
   transition: all 375ms ease-in-out;
-  margin: 0 0 10vh 0;
+  margin: 0 0 5vh 0;
 
 
   option {

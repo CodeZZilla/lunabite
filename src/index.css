@@ -56,9 +56,10 @@ i{
 
 /* <nav> */
 .navbar {
+  position: fixed;
+  width: 100vw;
   height: var(--nav-size);
   background-color: var(--bg);
-  padding: 0 1rem;
   z-index: 9999;
   -webkit-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);

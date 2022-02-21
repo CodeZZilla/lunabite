@@ -13,7 +13,6 @@ getChainOptions().then((chainOptions) => {
             <WalletProvider {...chainOptions}>
                 <createGlobalStyle/>
                 <BrowserRouter>
-                    <Header/>
                     <App/>
                 </BrowserRouter>
             </WalletProvider>

@@ -1,17 +1,4 @@
 import React, {useState} from 'react';
-import {
-    ButtonDropDown,
-    ButtonStyled,
-    Container,
-    HoverMenuItem,
-    LiStyled,
-    MenuDropDown, MenuItem,
-    UlStyled
-} from "../../styles/Basic/Header.styled";
-import {Link} from "react-router-dom";
-import Search from "./Search";
-import {Transition} from 'react-spring';
-import {useWallet, WalletStatus} from '@terra-money/wallet-provider'
 
 const menuItems = ['Home', 'Profile', 'Order History', 'Sign out'];
 
