@@ -4,7 +4,7 @@ import {useWallet, WalletStatus} from "@terra-money/wallet-provider";
 import ModalSuccess from "./ModalSuccess";
 
 export default function DropdownMenu() {
-    const {
+   const {
         status,
         availableConnectTypes,
         availableInstallTypes,
@@ -33,14 +33,14 @@ export default function DropdownMenu() {
             <div className="menu">
                 {status === WalletStatus.WALLET_NOT_CONNECTED && (
                     <>
-                        {availableInstallTypes.map((installType) => (
+                        {/*{availableInstallTypes.map((installType) => (
                             <DropdownItem
                                 key={`install-${installType}`}
                                 onClick={() => install(installType)}
                                 link="/">
                                 Install {installType}
                             </DropdownItem>
-                        ))}
+                        ))}*/}
                         {availableConnectTypes.map((connectType) => (
                             <DropdownItem
                                 key={`connect-${connectType}`}
@@ -58,7 +58,6 @@ export default function DropdownMenu() {
                             Disconnect
                         </DropdownItem>
                     </>
-
                 )}
             </div>
         </div>

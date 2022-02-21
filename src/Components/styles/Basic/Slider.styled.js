@@ -9,7 +9,7 @@ export const DivSlider = styled.div`
 
   h1 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 37px;
     line-height: 40px;
     display: flex;
     align-items: center;
@@ -39,11 +39,10 @@ export const CardStyled = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom:10px;
     padding-left: 10px ;
   }
 
-  h4 {
+  a {
     font-style: normal;
     font-weight: normal;
     font-size: 17px;

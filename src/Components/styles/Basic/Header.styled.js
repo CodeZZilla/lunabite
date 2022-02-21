@@ -99,13 +99,14 @@ export const HoverMenuItem = styled.div`
 
 export const ButtonStyled = styled.button`
   display: flex;
+  width: 40px;
+  margin-right: 15px;
   align-items: center;
   justify-content: center;
   background: radial-gradient(circle at 100%, #80B1FF, #81C7EE 10%, #83FFC1 100%, #333 10%);
   border-style: none;
   border-radius: 100px;
   --button-size: calc(var(--nav-size) * 0.5);
-  width: calc(var(--button-size) * 1.2);
   height: calc(var(--button-size) * 1.2);
   text-align: start;
   font-weight: 300;
