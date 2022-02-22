@@ -16,7 +16,7 @@ export default function SliderStyled(props) {
     return (
         <DivSlider>
             <h1>{props.h}</h1>
-            <OwlCarousel className='owl-theme' stagePadding={100} animateOut  items={3} margin={100}>
+            <OwlCarousel className='owl-theme' stagePadding={100} animateOut loop autoplay items={3} margin={100}>
                 {cards}
             </OwlCarousel>
         </DivSlider>

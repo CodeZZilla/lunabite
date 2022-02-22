@@ -35,7 +35,7 @@ export default function ModalSuccess() {
                     </defs>
                 </svg>
             </div>
-            <div className="modal">
+            <div className="modal_home">
                 <h2>Success auth!</h2>
                 <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Quo aliquid quisquam, molestias. Hic eaque aut
                     impedit mollitia enim tempora qui!</p>

@@ -1,14 +1,10 @@
 import React from "react";
 import {
-    ButtonAsA,
     ModalButton,
     ModalContentDiv,
     ModalDivHead,
     ModalMainDiv
 } from "../styles/CreateNewNFT/ModalCreatedNFT.styled";
-import {ButtonTwoStyled} from "../styles/Landing/Home.styled";
-import {DropzoneComponent} from "react-dropzone-component";
-import {FileNFT} from "../styles/CreateNewNFT/CreateNewNFT.styled";
 
 
 export default function ModalCreatedNFT(props) {

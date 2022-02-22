@@ -7,7 +7,7 @@ export const ItemPageOwnerMain = styled.div`
 
 export const ItemPageOwnerHeader = styled.div`
   padding: 0 10vw;
-  margin: 5vh 0 0 0;
+  margin: 10vh 0 0 0;
   display: flex;
   flex-direction: row;
   height: 50vh;

@@ -136,7 +136,6 @@ export default function CreateNewNFT(props) {
                 <AStyled color="white" href="#demo-modal" background="#A7A7FF"
                          secondBackground="#bcbcff">Create</AStyled>
             </ContainerCreateNFT>
-            <ModalCreatedNFT name={"Benuk"}/>
             <FooterStyled/>
         </MainCreateNFT>
     )
