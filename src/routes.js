@@ -4,6 +4,7 @@ import Landing from "./Components/LandingPage/Landing";
 import Profile from "./Components/Profile/Profile";
 import CreateNewNFT from "./Components/CreateNewNFT/CreateNewNFT";
 import ItemPageOwner from "./Components/ItemPageOwner/ItemPageOwner";
+import ExplorePage from "./Components/Explore/ExplorePage";
 
 export const useRoutes = (userType) => {
     return (
@@ -13,6 +14,7 @@ export const useRoutes = (userType) => {
                 <Route path='/' element={<Landing/>}/>
                 <Route path='/profile' element={<Profile name="Valentyn Kit" nickname="hi_vel"/>}/>
                 <Route path='/create-new-nft' element={<CreateNewNFT/>}/>
+                <Route path='/explore' element={<ExplorePage/>}/>
             </Routes>
         </div>
     );

@@ -6,10 +6,11 @@ export const MainCreateNFT = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 5vh;
 `
 
 export const ContainerCreateNFT = styled.div`
-  width: 100vw;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -56,9 +57,6 @@ export const ContainerCreateNFT = styled.div`
   }
 `
 
-export const ContainerCreateNFTTop = styled(ContainerCreateNFT)`
-  margin: 15vh 0 0 0;
-`
 
 export const FileNFT = styled.div`
   max-width: 20vw; 

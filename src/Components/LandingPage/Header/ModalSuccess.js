@@ -1,17 +1,8 @@
 import React, {useEffect, useState} from "react"
 import "./styleModal.scss"
-import {useWallet} from "@terra-money/wallet-provider";
 
 
 export default function ModalSuccess() {
-    const {
-        status,
-        availableConnectTypes,
-        availableInstallTypes,
-        connect,
-        install,
-        disconnect,
-    } = useWallet()
     const [isVisible, setIsVisible] = useState(true)
 
     useEffect(() => {

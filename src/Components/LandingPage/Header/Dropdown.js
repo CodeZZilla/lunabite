@@ -1,9 +1,7 @@
 import React, {useRef} from "react";
 import {useDetectOutsideClick} from "./useDetectedOutsideClick";
 import {Link} from "react-router-dom";
-import HomeIcon from "../../../Icons/IconWallet";
 import {useWallet, WalletStatus} from "@terra-money/wallet-provider";
-import ImageAspectRatioOutlinedIcon from "@mui/icons-material/ImageAspectRatioOutlined";
 import LoginIcon from '@mui/icons-material/Login';
 import QrCodeIcon from '@mui/icons-material/QrCode';
 import LogoutIcon from '@mui/icons-material/Logout';
@@ -65,8 +63,8 @@ export const Dropdown = ({text, link, items, login = false}) => {
             </nav>
             <nav ref={dropdownRef} className={`menu ${isActive ? "active" : "inactive"}`}>
                 {
-                    !login ?
-                        <ul>
+                    !login ? null
+                       /* <ul>
                             {
                                 items.map((item, i) => (
                                     <li key={i}>
@@ -79,7 +77,7 @@ export const Dropdown = ({text, link, items, login = false}) => {
                                     </li>
                                 ))
                             }
-                        </ul>
+                        </ul>*/
                         : loginUI()
                 }
             </nav>

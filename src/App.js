@@ -9,6 +9,7 @@ import CreateNewNFT from "./Components/CreateNewNFT/CreateNewNFT";
 import ItemPageOwner from "./Components/ItemPageOwner/ItemPageOwner";
 import Header from "./Components/LandingPage/Header/Header";
 import React from "react";
+import ExplorePage from "./Components/Explore/ExplorePage";
 
 let data = {
     name: "YarikCoin",
@@ -20,21 +21,19 @@ let data = {
 
 const App = observer(() => {
     return (
-        <>
+        <div className="App">
+            <Header/>
             {CommonStore.token !== null ?
                 useRoutes(CommonStore.token.split("___")[1]) :
-
-                <div className="App">
-                    <Header/>
-                    <Routes>
-                        <Route path='/' element={<Landing/>}/>
-                        <Route path='/profile' element={<Profile name="Valentyn Kit" nickname="hi_vel"/>}/>
-                        <Route path='/create-new-nft' element={<CreateNewNFT/>}/>
-                        <Route path='/item-owner' element={<ItemPageOwner {...data}/>}/>
-                    </Routes>
-                </div>
+                <Routes>
+                    <Route path='/' element={<Landing/>}/>
+                    <Route path='/profile' element={<Profile name="Valentyn Kit" nickname="hi_vel"/>}/>
+                    <Route path='/create-new-nft' element={<CreateNewNFT/>}/>
+                    <Route path='/item-owner' element={<ItemPageOwner {...data}/>}/>
+                    <Route path='/explore' element={<ExplorePage/>}/>
+                </Routes>
             }
-        </>
+        </div>
     );
 })
 

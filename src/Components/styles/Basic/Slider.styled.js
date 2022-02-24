@@ -54,6 +54,7 @@ export const CardStyled = styled.div`
 
   h3 {
     font-style: normal;
+    margin: 0;
     font-weight: normal;
     font-size: 17px;
     line-height: 31px;

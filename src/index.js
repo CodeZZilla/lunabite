@@ -11,10 +11,9 @@ getChainOptions().then((chainOptions) => {
     ReactDOM.render(
         <React.StrictMode>
             <WalletProvider {...chainOptions}>
-                <createGlobalStyle/>
-                <BrowserRouter>
-                    <App/>
-                </BrowserRouter>
+                    <BrowserRouter>
+                            <App/>
+                    </BrowserRouter>
             </WalletProvider>
         </React.StrictMode>,
         document.getElementById('root')

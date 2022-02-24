@@ -67,14 +67,14 @@ export default function CreateNewNFT(props) {
     };
     return (
         <MainCreateNFT>
-            <ContainerCreateNFTTop>
+            <ContainerCreateNFT>
                 <h1>Create New NFT</h1>
                 <h2>Upload a Image, Video, Audio, or GIF</h2>
                 <p>File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size: 100 MB</p>
                 <FileNFT className="drop-zone">
                     <DropzoneComponent config={componentConfig}/>
                 </FileNFT>
-            </ContainerCreateNFTTop>
+            </ContainerCreateNFT>
             <ContainerCreateNFT>
                 <h2>Name of Creation</h2>
                 <TextInput type="text" placeholder="Item name"/>
